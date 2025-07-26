@@ -11,26 +11,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./mobile.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <!-- <link rel="stylesheet" href="./responsive.css"> -->
+    <!-- <link rel="stylesheet" href="./mobile.css"> -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <header class="container">
-        <nav class="navbar flex ">
-            <img src="./assets/logo.png" alt="logo of webpage ">
-            <ul class="menu flex">
-                <li> <a href="#">Home</a></li>
-                <li> <a href="#">Shop</a></li>
-                <li> <a href="#">About us </a></li>
-                <p> <i class="ri-shopping-cart-2-line"></i> Cart ($56)</p>
-            </ul>
-        </nav>
-    </header>
+   
     <main>
         <!-- banner section starts here  -->
-        <section class="banner-section flex container">
+        <section class="banner-section flex container ">
             <div class="banner-text">
                 <h1>always <span>fresh <br> flowers</span></h1>
                 <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
@@ -41,9 +35,10 @@
             </div>
         </section>
         <!-- plants-section starts here  -->
-        <section class="our-plants-section container flex">
+        <section class="our-plants-section container flex ">
             <h1> Our <span> Plants</span></h1>
-            <p> Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
+            <p class="sub-heading"> Indulge your senses with the beauty and fragrance of our fresh flower shop. From
+                classic roses to exotic
                 blooms, we offer a wide variety of fresh.</p>
             <div class="plant-items ">
                 <div class="plant-item flex ">
@@ -94,11 +89,35 @@
                     <h1>20 USD </h1>
                     <button onclick="add()"> add to cart </button>
                 </div>
-                
+                <div class="plant-item flex ">
+                    <img src="./assets/sample-flower-image.png" alt=" flower image ">
+                    <p> Lily Blossom</p>
+                    <h1>20 USD </h1>
+                    <button onclick="add()"> add to cart </button>
+                </div>
+                <div class="plant-item flex ">
+                    <img src="./assets/sample-flower-image.png" alt=" flower image ">
+                    <p> Lily Blossom</p>
+                    <h1>20 USD </h1>
+                    <button onclick="add()"> add to cart </button>
+                </div>
+                <div class="plant-item flex ">
+                    <img src="./assets/sample-flower-image.png" alt=" flower image ">
+                    <p> Lily Blossom</p>
+                    <h1>20 USD </h1>
+                    <button onclick="add()"> add to cart </button>
+                </div>
+                <div class="plant-item flex ">
+                    <img src="./assets/sample-flower-image.png" alt=" flower image ">
+                    <p> Lily Blossom</p>
+                    <h1>20 USD </h1>
+                    <button onclick="add()"> add to cart </button>
+                </div>
+
             </div>
         </section>
         <!-- plants-lover-section start here -->
-        <section class="plant-lover-section container flex">
+        <section class="plant-lover-section container flex ">
             <div class="plant-lover-section-img">
                 <img src="./assets/flower-store.png" alt="flower store image">
 
@@ -108,12 +127,19 @@
             <div class="plant-lover-section-text flex">
                 <h1> Flower & Plants Lover </h1>
                 <ul>
-                    <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
-                        to exotic blooms, we offer a wide variety of fresh.</li>
-                    <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
-                        to exotic blooms, we offer a wide variety of fresh.</li>
-                    <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
-                        to exotic blooms, we offer a wide variety of fresh.</li>
+                    <li>
+                        <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                            roses o exotic blooms, we offer a wide variety of fresh. </p>
+                    </li>
+                    <li>
+                        <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                            roses o exotic blooms, we offer a wide variety of fresh. </p>
+                    </li>
+                    <li>
+                        <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                            roses o exotic blooms, we offer a wide variety of fresh. </p>
+                    </li>
+
                 </ul>
             </div>
         </section>
@@ -140,7 +166,7 @@
                 </div>
             </div>
         </section>
-        <section class="newsletter-section">
+        <section class="newsletter-section  ">
             <div class="newsletter-container flex ">
                 <h1> Join the colorful Bunch </h1>
                 <div class="input flex ">
@@ -151,7 +177,7 @@
         </section>
     </main>
     <footer class="footer container">
-        <div class="footer-container flex">
+        <div class="footer-container grid">
             <div class="footer-content-1 flex gap-10 ">
                 <img src="./assets/logo.png" alt="logo">
                 <p>Indulge your senses with the <br> beauty and fragrance of our fresh <br> flower shop. </p>
@@ -180,7 +206,7 @@
     </footer>
 
     <script>
-        function add (){
+        function add() {
             alert("Flower Added To Cart ");
         }
     </script>
