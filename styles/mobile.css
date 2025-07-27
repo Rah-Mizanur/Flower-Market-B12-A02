@@ -21,6 +21,12 @@
     
 }
 @media (max-width:576px) {
+    .menubar{
+        display: inline;
+    }
+    .menu li{
+        display: none;
+    }
     .banner-section{
         flex-direction: column-reverse;
     }

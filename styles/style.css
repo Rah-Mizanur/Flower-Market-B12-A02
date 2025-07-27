@@ -42,7 +42,45 @@ h1 span {
 }
 
 /* header section  */
+.header-section{
 
+}
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+.menubar{
+    margin-top: 40px;
+    display: none;
+    color: rgb(37, 35, 50);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.menu{
+    margin-top: 40px;
+    justify-content: space-between;
+    gap: 20px;
+}
+.menu li {
+    color: rgb(137, 135, 161);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.menu li:nth-child(1) {
+    color: rgb(37, 36, 50);
+
+}
+
+.menu p {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
 
 /* banner styles */
 
@@ -150,6 +188,7 @@ h1 span {
 
 /* plant-lover-section */
 .plant-lover-section {
+    margin-top: clamp(20px , 8vw ,80px);
     gap: 20px;
     justify-content: space-between;
     /* background: lightseagreen; */
