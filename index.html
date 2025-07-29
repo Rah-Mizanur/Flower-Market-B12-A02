@@ -21,7 +21,7 @@
 </head>
 
 <body>
-   <header class="header-section container ">
+   <header class="header-section container hide ">
         <nav class="navbar flex ">
             <img src="./assets/logo.png" alt="logo ">
              <p class="menubar"> <i class="ri-menu-add-line"></i> </p>
@@ -37,7 +37,7 @@
    </header>
     <main>
         <!-- banner section starts here  -->
-        <section class="banner-section flex container ">
+        <section class="banner-section flex container hide  ">
             <div class="banner-text">
                 <h1>always <span>fresh <br> flowers</span></h1>
                 <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
@@ -48,7 +48,7 @@
             </div>
         </section>
         <!-- plants-section starts here  -->
-        <section class="our-plants-section container flex ">
+        <section class="our-plants-section container flex hide  ">
             <h1> Our <span> Plants</span></h1>
             <p class="sub-heading"> Indulge your senses with the beauty and fragrance of our fresh flower shop. From
                 classic roses to exotic
@@ -130,7 +130,7 @@
             </div>
         </section>
         <!-- plants-lover-section start here -->
-        <section class="plant-lover-section container flex ">
+        <section class="plant-lover-section container flex hide  ">
             <div class="plant-lover-section-img">
                 <img src="./assets/flower-store.png" alt="flower store image">
 
@@ -157,29 +157,40 @@
             </div>
         </section>
         <!-- latest-deal-section starts here  -->
-        <section class="latest-deal-section container ">
-            <h1> <span>Latest</span> Deals</h1>
-            <p> Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
-                exotic
-                blooms, we offer a wide variety of fresh.</p>
-            <div class="latest-deal-item flex">
-                <div class="latest-deal-left flex ">
-                    <div class="bloom item flex">
-                        <h1>60% Off | Bloom Plant</h1>
-                        <a href="#">Shop Now</a>
-                    </div>
-                    <div class="dal-ana item  flex">
-                        <h1>30% Off | Ana Plant</h1>
-                        <a href="#">Shop Now</a>
-                    </div>
-                </div>
-                <div class="latest-deal-right flex ">
-                    <h1>25% Off | Zabo Plant</h1>
-                    <a href="#"> Shop Now</a>
+       <section class="latest-deal-section container">
+        <h1> <span>Latest</span> Deals</h1>
+        <p> Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
+            exotic
+            blooms, we offer a wide variety of fresh.</p>
+        <div class="offer-container">
+            <div class="offer offer1">
+                <img src="./assets/deal-ana.png" alt="">
+                <div class="offer-text">
+                    <h1>30% Off | Ana Plant</h1>
+                    <a href="#">Shop Now</a>
                 </div>
             </div>
-        </section>
-        <section class="newsletter-section  ">
+
+
+            <div class="offer offer2">
+                <img src="./assets/deal-zabo.png" alt="">
+                <div class="offer-text">
+                    <h1>30% Off | Ana Plant</h1>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+
+
+            <div class="offer offer3">
+                <img src="./assets/deal-bloom.png" alt="">
+                <div class="offer-text">
+                    <h1>30% Off | Ana Plant</h1>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="newsletter-section hide  ">
             <div class="newsletter-container flex ">
                 <h1> Join the colorful Bunch </h1>
                 <div class="input flex ">
@@ -189,7 +200,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer container">
+    <footer class="footer container hide ">
         <div class="footer-container grid">
             <div class="footer-content-1 flex gap-10 ">
                 <img src="./assets/logo.png" alt="logo">

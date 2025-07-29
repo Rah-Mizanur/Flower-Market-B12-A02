@@ -42,14 +42,13 @@ h1 span {
 }
 
 /* header section  */
-.header-section{
 
-}
 .navbar {
     justify-content: space-between;
     align-items: center;
 }
-.menubar{
+
+.menubar {
     margin-top: 40px;
     display: none;
     color: rgb(37, 35, 50);
@@ -58,11 +57,12 @@ h1 span {
     text-align: left;
 }
 
-.menu{
+.menu {
     margin-top: 40px;
     justify-content: space-between;
     gap: 20px;
 }
+
 .menu li {
     color: rgb(137, 135, 161);
     font-size: 16px;
@@ -188,7 +188,7 @@ h1 span {
 
 /* plant-lover-section */
 .plant-lover-section {
-    margin-top: clamp(20px , 8vw ,80px);
+    margin-top: clamp(20px, 8vw, 80px);
     gap: 20px;
     justify-content: space-between;
     /* background: lightseagreen; */
@@ -260,69 +260,89 @@ h1 span {
     margin-bottom: 20px;
 }
 
-.latest-deal-item {
-    justify-content: space-between;
+.offer {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.latest-deal-left {
-    width: 30%;
+.offer img {
+    position: absolute;
+    z-index: 1;
+    top: 00;
+    left: 00;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.offer-text {
+    position: relative;
+    padding: 20px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    height: 100%;
+}
+
+.offer1 {
+    grid-area: img1;
+}
+
+.offer2 {
+    grid-area: img2;
+}
+
+.offer3 {
+    grid-area: img3;
+}
+
+.offer-container {
+    min-height: 420px;
+    display: grid;
+    grid-template-areas:
+        'img1 img1 img2 img2 img2 img2 img2'
+        'img3 img3 img2 img2 img2 img2 img2';
     gap: 20px;
 }
 
-.latest-deal-left h1 {
-    font-size: 20px;
-    color: rgb(255, 255, 255);
+.offer img{
+    background: linear-gradient(rgba(0,0,0,0.6));
 }
 
-.latest-deal-left a {
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-}
 
-.latest-deal-left .item {
-    width: 100%;
-    height: 200px;
 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
 
-}
 
-.bloom {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/deal-bloom.png);
-    background-size: cover;
-}
-
-.dal-ana {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/deal-ana.png);
-    background-size: cover;
-}
-
-.latest-deal-right {
-    width: 67%;
-
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/deal-zabo.png);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    background-size: cover;
-}
-
-.latest-deal-right h1 {
+.offer-container h1 {
     color: white;
     font-size: clamp(24px, 4.5vw, 40px);
 }
 
-.latest-deal-right a {
+.offer-container a {
     color: white;
     font-size: clamp(20px, 4vw, 28px);
     text-decoration: underline;
 }
 
+.offer1 h1,
+.offer3 h1{
+    color: white;
+    font-size: 24px;
+}
+.offer1 a ,
+.offer3 a{
+    font-size: 20px;
+}
 /* newsletter-section */
 .newsletter-container {
     margin: 00 auto;
@@ -364,14 +384,14 @@ h1 span {
 }
 
 /* footer-section */
-.footer{
+.footer {
     width: 100%;
     /* padding: 20px; */
 }
 
 .footer-container {
     width: 95%;
-    padding: 20px auto ;
+    padding: 20px auto;
     margin: 0 auto;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
